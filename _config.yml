@@ -48,7 +48,7 @@ kramdown:
 
 
 # Disqus settings
-#disqus_username: _your_disqus_short_name_
+disqus_username: yangziwen
 
 # Duoshuo settings
 duoshuo_username: 6401439071276631000
