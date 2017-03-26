@@ -37,7 +37,7 @@ tags:
 &emsp;&emsp;&emsp;&emsp;**&bull;按需选择配置+无脑下一步**  
 &emsp;&emsp;&emsp;&emsp;**&bull;安装成功**  
 &emsp;&emsp;**2. 以迅雷不及掩耳之势进入应用商店，左键上方的头像，选择设置—自动更新应用（关）！！！**  
-&emsp;&emsp;**3. 开始菜单—设置—更新和安全—Windows更新—检查更新 **  
+&emsp;&emsp;**3. 开始菜单—设置—更新和安全—Windows更新—检查更新**  
 &emsp;&emsp;**4. 安装更新ing**  
 &emsp;&emsp;**5. Win10安装完成**  
 
@@ -94,8 +94,8 @@ tags:
 ![](/img/in-post/win+ubuntu/grub.jpg)  
 
 &emsp;&emsp;**14. Win10+Ubuntu16.04双系统安装完成**  
-&emsp;&emsp;**15. 可以对[Ubuntu进行个性化设置](http://www.bilibili.com/video/av4947544/) **   
-&emsp;&emsp;**16. [更改双系统时间差](https://jingyan.baidu.com/article/154b46317b25ca28ca8f41e8.html) **    
+&emsp;&emsp;**15. 可以对[Ubuntu进行个性化设置](http://www.bilibili.com/video/av4947544/)**   
+&emsp;&emsp;**16. [更改双系统时间差](https://jingyan.baidu.com/article/154b46317b25ca28ca8f41e8.html)**    
 ##  参考资料：
 &emsp;&emsp;&bull;[Win10和Ubuntu16.04双系统安装详解](http://www.jianshu.com/p/16b36b912b02)  
 &emsp;&emsp;&bull;[Win7 U盘安装Ubuntu16.04 双系统详细教程](http://blog.csdn.net/coderjyf/article/details/51241919)  
