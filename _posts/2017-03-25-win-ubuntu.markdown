@@ -94,8 +94,8 @@ tags:
 ![](/img/in-post/win+ubuntu/grub.jpg)  
 
 &emsp;&emsp;**14. Win10+Ubuntu16.04双系统安装完成**  
-&emsp;&emsp;**15. 可以对[Ubuntu进行个性化设置](http://www.bilibili.com/video/av4947544/) **  
-&emsp;&emsp;**16. [更改双系统时间差](https://jingyan.baidu.com/article/154b46317b25ca28ca8f41e8.html)**   
+&emsp;&emsp;**15. 可以对[Ubuntu进行个性化设置](http://www.bilibili.com/video/av4947544/) **   
+&emsp;&emsp;**16. [更改双系统时间差](https://jingyan.baidu.com/article/154b46317b25ca28ca8f41e8.html) **    
 ##  参考资料：
 &emsp;&emsp;&bull;[Win10和Ubuntu16.04双系统安装详解](http://www.jianshu.com/p/16b36b912b02)  
 &emsp;&emsp;&bull;[Win7 U盘安装Ubuntu16.04 双系统详细教程](http://blog.csdn.net/coderjyf/article/details/51241919)  
