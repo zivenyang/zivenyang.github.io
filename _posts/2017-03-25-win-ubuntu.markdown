@@ -36,7 +36,7 @@ tags:
 &emsp;&emsp;&emsp;&emsp;**&bull;安装ing**  
 &emsp;&emsp;&emsp;&emsp;**&bull;按需选择配置+无脑下一步**  
 &emsp;&emsp;&emsp;&emsp;**&bull;安装成功**  
-&emsp;&emsp;**2. 以迅雷不及掩耳之势进入应用商店，左键上方的头像，选择设置—自动更新应用（关）！！！**  
+&emsp;&emsp;**2. 以迅雷不及掩耳之势进入应用商店，左键上方的头像，选择设置—自动更新应用** *（关）* **！！！**  
 &emsp;&emsp;**3. 开始菜单—设置—更新和安全—Windows更新—检查更新**  
 &emsp;&emsp;**4. 安装更新ing**  
 &emsp;&emsp;**5. Win10安装完成**  
