@@ -4,7 +4,7 @@ title:        "Win10+Ubuntu16.04双系统安装"
 subtitle:     " \"Win+Ubuntu双系统\""
 date:         2017-03-26
 author:       "Ziven"
-header-img:   "img/post-bg-2015.jpg"
+header-img:   "img/in-post/win+ubuntu/bp.jpg"
 header-mask:  0.3
 catalog:      true
 tags:
