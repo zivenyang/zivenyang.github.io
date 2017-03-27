@@ -27,7 +27,7 @@ highlighter: rouge
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+anchorjs: false                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
 
@@ -48,7 +48,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: yangziwen
+#disqus_username: yangziwen
 
 # Duoshuo settings
 #duoshuo_username: 6401439071276631000
@@ -59,7 +59,7 @@ disqus_username: yangziwen
 
 
 # Analytics settings
-# Baidu Analytics 
+# Baidu Analytics
 ba_track_id: [326106fa4e791815311ac753b908a120]
 
 # Google Analytics
