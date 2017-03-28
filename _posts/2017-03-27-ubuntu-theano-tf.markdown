@@ -160,7 +160,7 @@ to PATH in your /home/ziven/.bashrc ? [yes|no]
 - 选择最新安装的显卡驱动
 ![](/img/in-post/theano-tf/drive3.png)
 
-- 如果没有新的显卡驱动可以如下安装  
+- 如果没有新的显卡驱动可以如下安装*（显卡驱动要考虑清楚谨慎安装，安装不匹配的显卡驱动可能会引起无法启动图形界面的情况）*  
 ```
   sudo apt-get install cuda-drivers
 ```
