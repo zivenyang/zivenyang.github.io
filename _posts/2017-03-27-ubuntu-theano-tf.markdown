@@ -228,7 +228,7 @@ to PATH in your /home/ziven/.bashrc ? [yes|no]
 ```
 - 然后跑一下bandwidthTest看一下  
 ```
- ./bandwidthTest
+  ./bandwidthTest
 ```
 显示PASS即可
 - CUDA安装完成   
