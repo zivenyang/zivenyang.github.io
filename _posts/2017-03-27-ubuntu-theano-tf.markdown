@@ -115,6 +115,12 @@ to PATH in your /home/ziven/.bashrc ? [yes|no]
   Mail comments, suggestions and bug reports to <pasc@redellipse.net>.
 ```
 
+## conda自动安装：
+- 现在可以直接使用conda来一次性安装TensorFlow，conda会自动安装相应版本的CUDAToolkit和cuDNN
+```
+conda install tensorflow-gpu # GPU版本
+```
+
 ## 安装CUDA：  
 - 确保GPU为CUDA所支持的GPU   
 ```
@@ -129,11 +135,6 @@ to PATH in your /home/ziven/.bashrc ? [yes|no]
 ```
   gcc --version
 ```
-- 选择显卡驱动  
-![](/img/in-post/theano-tf/drive1.png)
-
-![](/img/in-post/theano-tf/drive2.png)
-
 - 下载[CUDA Toolkit](https://developer.nvidia.com/cuda-downloads),建议使用.deb
 - 切换到下载目录
 ```
