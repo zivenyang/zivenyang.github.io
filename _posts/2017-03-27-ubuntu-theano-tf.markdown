@@ -156,7 +156,7 @@ conda install tensorflow-gpu # GPU版本
 ```
 - 更新软件包  
 ```
-  sudo apt-get cuda
+  sudo apt-get install cuda
 ```
 - 选择最新安装的显卡驱动
 ![](/img/in-post/theano-tf/drive3.png)
