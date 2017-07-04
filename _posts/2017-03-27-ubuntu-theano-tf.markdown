@@ -1,7 +1,6 @@
 ---
 layout:       post
-title:        "Ubuntu16.04 + Theano
-+ Tensorflow"
+title:        "Ubuntu16.04 + Theano + Tensorflow"
 subtitle:     " \"深度学习环境搭建\""
 date:         2017-03-27
 author:       "Ziven"
