@@ -1,5 +1,5 @@
 #我的博客
-###[My Blog &rarr;](ziven.xin)
+###[My Blog &rarr;](http://ziven.xin)
 
 
 
