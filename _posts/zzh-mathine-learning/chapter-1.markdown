@@ -1,0 +1,13 @@
+---
+layout:     post
+title:      "第1章 绪论"
+date:       2017-07-06
+author:     "Ziven"
+header-img: "img/in-post/tf-problems/bg.jpg"
+header-mask:  0.3
+catalog:      true
+tags:
+    - 学习笔记
+    - 机器学习
+---
+>返回[目录](/_posts/2017-07-06-zzh-machine-learning-outline.markdown)  
