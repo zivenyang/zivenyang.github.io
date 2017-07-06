@@ -31,4 +31,4 @@ tags:
 ![terminology2](https://cdn.rawgit.com/zivenyang/draw/573d142d/zzh-ml/ch1/terminology2.svg)
 
 \\(D=\{x_{1}, x_{2}, \cdots, x_{m}\}\\)\\(\rightarrow\\)包\\(m\\)个示例的数据集   
-$x_{i}=(x_{i1}, x_{i2}, \cdots, x_{id})\rightarrow$每个示例由$d$个属性描述，$x_i$是$d$维样本空间$\mathcal{X}$中的一个向量，$x_{i}\in\mathcal{X}$，其中$x_{ij}$是$x_i$在第$j$个属性上的取值，$d$称为样本$x_i$的“维数(dimensionality)”
+\\(x_{i}=(x_{i1}, x_{i2}, \cdots, x_{id})\\)\\(\rightarrow\\)每个示例由\\(d\\)个属性描述，\\(x_i\\)是\\(d\\)维样本空间\\(\mathcal{X}\\)中的一个向量，\\(x_{i}\in\mathcal{X}\\)，其中\\(x_{ij}\\)是\\(x_i\\)在第\\(j\\)个属性上的取值，\\(d\\)称为样本\\(x_i\\)的“维数(dimensionality)”
