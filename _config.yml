@@ -3,7 +3,7 @@ title: 子文°
 SEOTitle: Ziven's Blog
 header-img: img/home-bg.jpg
 email: yangziwen1994@gmail.com
-description: "醉后不知天在水  满船清梦压星河"
+description: "醉后不知天在水，满船清梦压星河"
 keyword: "Computer Vision"
 url: "http://ziven.xin/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -64,13 +64,13 @@ ba_track_id: [0f6c17bc6df2c03c739f3323bce088de]
 
 # Google Analytics
 ga_track_id: 'UA-96209841-1'            # Format: UA-xxxxxx-xx
-ga_domain: https://zivenyang.github.io/
+ga_domain: http://ziven.xin/
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Hi :)"
+sidebar-about-description: "醉后不知天在水  满船清梦压星河"
 sidebar-avatar: /img/sidebar.JPG      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
