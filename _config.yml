@@ -70,7 +70,7 @@ ga_domain: http://ziven.xin/
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "醉后不知天在水  满船清梦压星河"
+sidebar-about-description: "醉后不知天在水\n满船清梦压星河"
 sidebar-avatar: /img/sidebar.JPG      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
