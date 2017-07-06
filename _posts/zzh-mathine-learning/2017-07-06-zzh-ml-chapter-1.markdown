@@ -29,3 +29,14 @@ tags:
 ### 2. 基本术语:
 ![terminology](https://cdn.rawgit.com/zivenyang/draw/c8417e3e/zzh-ml/ch1/terminology.svg)
 ![terminology2](https://cdn.rawgit.com/zivenyang/draw/573d142d/zzh-ml/ch1/terminology2.svg)
+
+```flow
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
