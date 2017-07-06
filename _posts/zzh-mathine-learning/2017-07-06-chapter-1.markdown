@@ -10,4 +10,4 @@ tags:
     - 学习笔记
     - 机器学习
 ---
->返回[目录](/_posts/2017-07-06-zzh-machine-learning-outline.markdown)  
+>返回[目录](http://ziven.xin/2017/07/06/zzh-machine-learning-outline/)  
