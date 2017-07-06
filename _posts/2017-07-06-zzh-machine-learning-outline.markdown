@@ -12,5 +12,5 @@ tags:
 ---
 >记录《机器学习》学习过程中的重点及问题
 
-## 目录：
-* [第1章 绪论](/_posts/zzh-mathine-learning/chapter-1.markdown) *(最后修正时间：2017-07-06)*
+### 目录：
+* [第1章 绪论](http://ziven.xin/1994/11/05/zzh-ml-chapter-1/) *(最后修正时间：2017-07-06)*
