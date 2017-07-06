@@ -15,6 +15,7 @@ tags:
 ## 重点：
 ### 1. 什么是“机器学习(machine learning)”?
 > 机器学习所研究的主要内容是关于在计算机上从数据产生“模型(model)”的算法，即“学习算法(learning algorithm)”   
+
 ![ml-def2](https://cdn.rawgit.com/zivenyang/draw/26a18a7b/zzh-ml/ch1/ml-def2.svg)
 
 > 有了学习算法，我们把经验数据提供给它，它就能基于这些数据产生模型；在面对新的情况时(没有剖开的西瓜)，模型会给我们提供相应的判断。
@@ -26,4 +27,5 @@ tags:
 ![ml-def](https://cdn.rawgit.com/zivenyang/draw/b64ab860/zzh-ml/ch1/ml-def.svg)
 
 ### 2. 基本术语:
-![](https://cdn.rawgit.com/zivenyang/draw/ec574799/zzh-ml/ch1/terminology.svg)
+![terminology](https://cdn.rawgit.com/zivenyang/draw/c8417e3e/zzh-ml/ch1/terminology.svg)
+![terminology2](https://cdn.rawgit.com/zivenyang/draw/573d142d/zzh-ml/ch1/terminology2.svg)
