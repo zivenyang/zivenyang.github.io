@@ -46,16 +46,16 @@ tags:
 \\[
 \text{学习任务}
 \begin{cases}
-\text{监督学习(supervised learning)} \\
-\text{无监督学习(unsupervised learning)}
+\text{监督学习(supervised learning)}  \begin{cases}
+\text{分类(classification)} \begin{cases}
+\text{二分类(binary classification)} \longrightarrow \mathcal{Y}=\\{-1,+1\\} \\\  
+\text{多分类(multi-class classification)} \longrightarrow |\mathcal{Y}|>2
+\end{cases} \\\  
+\text{回归(regression)} \longrightarrow \mathcal{Y}=\mathbb{R}, \mathbb{R}\text{为实数集}
+\end{cases} \\\  
+\text{无监督学习(unsupervised learning)} \begin{cases}
+\text{聚类(cluster)} \\\  
+\vdots
 \end{cases}
-\\]
-
-
-\\[
-\begin{cases}
-a_1x+b_1y+c_1z=d_1 \\  
-a_2x+b_2y+c_2z=d_2 \\   
-a_3x+b_3y+c_3z=d_3
 \end{cases}
 \\]
