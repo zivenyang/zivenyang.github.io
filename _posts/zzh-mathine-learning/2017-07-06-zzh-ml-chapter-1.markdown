@@ -25,14 +25,14 @@ tags:
   \text{经验数据}
   }
 }
-@>>>
+\longrightarrow
 \bbox[white,5px,border:1px solid black]
 {
   {
     \text{学习算法(learning algorithm)}
   }
 }
-@>>>
+\longrightarrow
 \bbox[#AF0,5px,border:1px solid black]
 {
   {
@@ -54,14 +54,14 @@ tags:
   \text{没有剖开的西瓜}
   }
 }
-@>>>
+\longrightarrow
 \bbox[#AF0,5px,border:1px solid black]
 {
   {
     \text{模型(model)}
   }
 }
-@>>>
+\longrightarrow
 \bbox[#F8A,5px,border:1px solid black]
 {
   {
@@ -84,14 +84,14 @@ tags:
   \text{经验}\mathtt{E}
   }
 }
-@>{\text{学习}}>>
+\-{\text{学习}}\rightarrow
 \bbox[5px,border:1px solid black]
 {
   {
     \text{程序}
   }
 }
-@>>>
+\longrightarrow
 \bbox[#AF0,5px,border:1px solid black]
 {
   {
@@ -119,14 +119,14 @@ tags:
   \text{训练数据(training data)}
   }
 }
-@>>>
+\longrightarrow
 \bbox[white,5px,border:1px solid black]
 {
   {
     \text{假设(hypothsis)}
   }
 }
-@>{\text{逼近}}>>
+\-\text{逼近}\longrightarrow
 \bbox[#F8A,5px,border:1px solid black]
 {
   {
@@ -148,7 +148,7 @@ tags:
   \text{训练集\\(\\{(x_{1},y_{1}),(x_{2},y_{2}),\cdots,(x_{m},y_{m})\\}\\)}
   }
 }
-@>{\text{学习}}>>
+\-\text{学习}\longrightarrow
 \bbox[white,5px,border:1px solid black]
 {
   {
@@ -168,14 +168,14 @@ tags:
   \text{测试样本(testing sample)}
   }
 }
-@>>>
+\longrightarrow
 \bbox[white,5px,border:1px solid black]
 {
   {
   f:\mathcal{X}\mapsto\mathcal{Y}
   }
 }
-@>>>
+\longrightarrow
 y
 \end{CD}
 \\]
