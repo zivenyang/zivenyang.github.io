@@ -59,3 +59,11 @@ tags:
 \end{cases}
 \end{cases}
 \\]
+
+> 学得模型适用于新样本的能力，称为“泛化(generalization)”能力
+通常假设样本空间中全体样本服从一个未知“分布(distribution)”\\(\mathcal{D}\\)，我们获得的每个样本都是独立地从这个样本上采样获得的，即“独立同分布(independent and identically distributed，简称\\(i.i.d.\\))”。一般而言，训练样本越多，我们得到关于\\(\mathcal{D}\\)的信息越多，这样就越有可能通过学习获得具有强泛化能力的模型。
+\\[\bbox[10px,border:1px solid black]
+{
+\text{训练样本}\uparrow\space\longrightarrow\space\text{关于\\(\mathcal{D}\\)的信息}\uparrow\space\longrightarrow\space\text{模型泛化能力}\uparrow
+}
+\\]
