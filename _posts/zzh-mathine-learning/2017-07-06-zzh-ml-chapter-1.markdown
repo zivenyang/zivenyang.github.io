@@ -54,7 +54,7 @@ tags:
 \text{回归(regression)} \longrightarrow \mathcal{Y}=\mathbb{R}, \mathbb{R}\text{为实数集}
 \end{cases} \\\  
 \text{无监督学习(unsupervised learning)} \begin{cases}
-\text{聚类(cluster)} \\\  
+\text{聚类(cluster)} \longrightarrow \text{没有}\mathcal{Y} \\\  
 \vdots
 \end{cases}
 \end{cases}
