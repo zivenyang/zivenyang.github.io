@@ -14,7 +14,7 @@ tags:
 
 ## 重点：
 ### 1. 什么是“机器学习(machine learning)”?
-> 机器学习所研究的主要内容是关于在计算机上从数据产生“模型(model)”的算法，即“学习算法(learning algorithm)”   
+机器学习所研究的主要内容是关于在计算机上从数据产生“模型(model)”的算法，即“学习算法(learning algorithm)”   
 
 \\[
 \require{AMScd}
@@ -43,7 +43,7 @@ tags:
 \\]
 
 
-> 有了学习算法，我们把经验数据提供给它，它就能基于这些数据产生模型；在面对新的情况时(没有剖开的西瓜)，模型会给我们提供相应的判断。
+有了学习算法，我们把经验数据提供给它，它就能基于这些数据产生模型；在面对新的情况时(没有剖开的西瓜)，模型会给我们提供相应的判断。
 
 \\[
 \require{AMScd}
@@ -72,7 +72,7 @@ tags:
 \\]
 
 
-> 定义：假设用P来评估计算机程序在某任务类T上的性能，若一个程序通过利用经验E在T中任务上获得了性能改善，则我们就说关于T和P，该程序对E进行了学习。
+定义：假设用P来评估计算机程序在某任务类T上的性能，若一个程序通过利用经验E在T中任务上获得了性能改善，则我们就说关于T和P，该程序对E进行了学习。
 
 \\[\bbox[20px,border:1px solid black]
 {\{\text{任务类\\(\mathtt{T}\\)中的任务} \\\  
@@ -106,7 +106,7 @@ tags:
 <img src="/img/in-post/zzh-machine-learning/ch1/terminology.svg" />
 <img src="/img/in-post/zzh-machine-learning/ch1/terminology2.svg" />
 
-> \\(D=\\{x_{1}, x_{2},\cdots, x_{m}\\}\\)\\(\rightarrow\\)包含\\(m\\)个示例的数据集   
+\\(D=\\{x_{1}, x_{2},\cdots, x_{m}\\}\\)\\(\rightarrow\\)包含\\(m\\)个示例的数据集   
 \\(x_{i}=(x_{i1}, x_{i2}, \cdots, x_{id})\\)\\(\rightarrow\\)每个示例由\\(d\\)个属性描述，\\(x_i\\)是\\(d\\)维样本空间\\(\mathcal{X}\\)中的一个向量，\\(x_{i}\in\mathcal{X}\\)，其中\\(x_{ij}\\)是\\(x_i\\)在第\\(j\\)个属性上的取值，\\(d\\)称为样本\\(x_i\\)的“维数(dimensionality)”
 
 训练(training)或学习(learning):
@@ -198,7 +198,7 @@ y
 \end{cases}
 \\]
 
-> 学得模型适用于新样本的能力，称为“泛化(generalization)”能力
+学得模型适用于新样本的能力，称为“泛化(generalization)”能力
 通常假设样本空间中全体样本服从一个未知“分布(distribution)”\\(\mathcal{D}\\)，我们获得的每个样本都是独立地从这个样本上采样获得的，即“独立同分布(independent and identically distributed，简称\\(i.i.d.\\))”。一般而言，训练样本越多，我们得到关于\\(\mathcal{D}\\)的信息越多，这样就越有可能通过学习获得具有强泛化能力的模型。
 
 \\[\bbox[10px,border:1px solid black]
