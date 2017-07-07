@@ -21,7 +21,7 @@ tags:
 
 > 有了学习算法，我们把经验数据提供给它，它就能基于这些数据产生模型；在面对新的情况时(没有剖开的西瓜)，模型会给我们提供相应的判断。
 
-<img src="/img/in-post/zzh-machine-learning/ch1/ml-def2.svg" />
+<img src="/img/in-post/zzh-machine-learning/ch1/ml-def4.svg" />
 
 > 定义：假设用P来评估计算机程序在某任务类T上的性能，若一个程序通过利用经验E在T中任务上获得了性能改善，则我们就说关于T和P，该程序对E进行了学习。
 
@@ -34,5 +34,5 @@ tags:
 > \\(D=\\{x_{1}, x_{2},\cdots, x_{m}\\}\\)\\(\rightarrow\\)包含\\(m\\)个示例的数据集   
 \\(x_{i}=(x_{i1}, x_{i2}, \cdots, x_{id})\\)\\(\rightarrow\\)每个示例由\\(d\\)个属性描述，\\(x_i\\)是\\(d\\)维样本空间\\(\mathcal{X}\\)中的一个向量，\\(x_{i}\in\mathcal{X}\\)，其中\\(x_{ij}\\)是\\(x_i\\)在第\\(j\\)个属性上的取值，\\(d\\)称为样本\\(x_i\\)的“维数(dimensionality)”
 
-<img  src="/img\in-post\zzh-machine-learning\ch1\training.svg" />
+<img  src="/img\in-post\zzh-machine-learning\ch1\training1.svg" />
 训练集由样例(example)\\(\(x_{i},y_{i}\)\\)组成，其中\\(y_{i}\in\mathcal{Y}\\),\\(\mathcal{Y}\\)是所有标记(label)的集合，亦称“标记空间(label space)”或“输出空间”。
