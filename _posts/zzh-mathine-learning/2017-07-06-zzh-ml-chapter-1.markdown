@@ -35,4 +35,17 @@ tags:
 \\(x_{i}=(x_{i1}, x_{i2}, \cdots, x_{id})\\)\\(\rightarrow\\)每个示例由\\(d\\)个属性描述，\\(x_i\\)是\\(d\\)维样本空间\\(\mathcal{X}\\)中的一个向量，\\(x_{i}\in\mathcal{X}\\)，其中\\(x_{ij}\\)是\\(x_i\\)在第\\(j\\)个属性上的取值，\\(d\\)称为样本\\(x_i\\)的“维数(dimensionality)”
 
 <img  src="/img\in-post\zzh-machine-learning\ch1\training.svg" />
-训练集\\(\\{(x_{1},y_{1}),(x_{2},y_{2}),\cdots,(x_{m},y_{m})\\}\\)由样例(example)\\(\(x_{i},y_{i}\)\\)组成，其中\\(y_{i}\in\mathcal{Y}\\),\\(\mathcal{Y}\\)是所有标记(label)的集合，亦称“标记空间(label space)”或“输出空间”。一般地，预测任务是希望通过对训练集\\(\\{(x_{1},y_{1}),(x_{2},y_{2}),\cdots,(x_{m},y_{m})\\}\\)进行学习，建立一个输入空间\\(\mathcal{X}\\)到输出空间\\(\mathcal{Y}\\)的映射\\(f:\mathcal{X}\mapsto\mathcal{Y}\\)。
+
+训练集\\(\\{(x_{1},y_{1}),(x_{2},y_{2}),\cdots,(x_{m},y_{m})\\}\\)由样例(example)\\(\(x_{i},y_{i}\)\\)组成，其中\\(y_{i}\in\mathcal{Y}\\)，\\(\mathcal{Y}\\)是所有标记(label)的集合，亦称“标记空间(label space)”或“输出空间”。一般地，预测任务是希望通过对训练集\\(\\{(x_{1},y_{1}),(x_{2},y_{2}),\cdots,(x_{m},y_{m})\\}\\)进行学习，建立一个输入空间\\(\mathcal{X}\\)到输出空间\\(\mathcal{Y}\\)的映射\\(f:\mathcal{X}\mapsto\mathcal{Y}\\)。
+
+<img src="/img/in-post/zzh-machine-learning/ch1/prediction.svg">
+
+<img src="/img/in-post/zzh-machine-learning/ch1/testing.svg">
+即得到预测标记\\(y=f(x)\\)
+
+\\[
+\text{学习任务}
+\begin{cases}
+\text{监督学习(supervised learning)} \\
+\text{无监督学习(unsupervised learning)}
+\\]
