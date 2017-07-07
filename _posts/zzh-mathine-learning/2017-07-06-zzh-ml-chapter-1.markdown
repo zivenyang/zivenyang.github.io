@@ -92,7 +92,7 @@ tags:
   }
 }
 \longrightarrow
-\bbox[#AF0,5px,border:1px solid black]
+\bbox[#AFF,5px,border:1px solid black]
 {
   {
     \text{性能}\mathtt{P}\uparrow
