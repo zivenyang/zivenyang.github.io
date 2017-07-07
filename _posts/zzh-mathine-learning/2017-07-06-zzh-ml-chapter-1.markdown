@@ -123,7 +123,7 @@ tags:
 \bbox[white,5px,border:1px solid black]
 {
   {
-    \text{假设(hypothsis)}
+    \text{假设(hypothesis)}
   }
 }
 \-\text{逼近}\longrightarrow
@@ -206,3 +206,17 @@ y
 \text{训练样本}\uparrow\space\longrightarrow\space\text{关于\\(\mathcal{D}\\)的信息}\uparrow\space\longrightarrow\space\text{模型泛化能力}\uparrow
 }
 \\]
+
+### 3. 假设空间：
+我们可以把学习过程看作一个在所有假设(hypothesis)组成的空间中进行搜索的过程，搜索目标是找到与训练集“匹配(fit)”的假设，即能够将训练集中的瓜判断正确的假设。
+\\[
+\begin{array}{ccccc}
+\text{编号} & \text{色泽} & \text{根蒂} & \text{敲声} & \text{好瓜} \\\
+\hline
+1 & \text{青绿} & \text{蜷缩} & \text{浊响} & \text{是} \\\
+2 & \text{乌黑} & \text{蜷缩} & \text{浊响} & \text{是} \\\
+3 & \text{青绿} & \text{硬挺} & \text{清脆} & \text{否} \\\
+4 & \text{乌黑} & \text{稍蜷} & \text{沉闷} & \text{否}
+\end{array}
+\\]
+假设的表示一旦确定，假设空间及规模大小就确定了。这里我们的假设空间由形如“\\((\text{色泽=?})\wedge(\text{根蒂=?})\wedge(\text{敲声=?})\\)”的可能取值所形成的假设组成。
