@@ -75,7 +75,7 @@ tags:
 > 定义：假设用P来评估计算机程序在某任务类T上的性能，若一个程序通过利用经验E在T中任务上获得了性能改善，则我们就说关于T和P，该程序对E进行了学习。
 
 \\[\bbox[20px,border:1px solid black]
-{{\text{任务类\\(\mathtt{T}\\)中的任务} \\\  
+{\{\text{任务类\\(\mathtt{T}\\)中的任务} \\\  
 \require{AMScd}
 \begin{CD}
 \bbox[yellow,5px,border:1px solid black]
@@ -99,7 +99,8 @@ tags:
   }
 }
 \end{CD}
-}}
+\}
+}
 \\]
 ### 2. 基本术语:
 <img src="/img/in-post/zzh-machine-learning/ch1/terminology.svg" />
