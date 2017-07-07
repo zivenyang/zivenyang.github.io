@@ -222,7 +222,7 @@ y
 假设的表示一旦确定，假设空间及规模大小就确定了。这里我们的假设空间由形如“\\((\text{色泽=?})\wedge(\text{根蒂=?})\wedge(\text{敲声=?})\\)”的可能取值所形成的假设组成。
 
 <img src="/img/in-post/zzh-machine-learning/ch1/hypothesis-space.svg" />
-\\[4\times3\times3\times=36\text{种假设}\\]
+\\[4\times3\times3=36\text{种假设}\\]
 \\[\emptyset\quad\text{也为1种假设}\\]
 \\[\text{因此共有}36+1=37\text{种假设}\\]
 
