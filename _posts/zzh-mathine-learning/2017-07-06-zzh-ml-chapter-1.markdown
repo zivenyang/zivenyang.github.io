@@ -223,7 +223,7 @@ y
 
 <img src="/img/in-post/zzh-machine-learning/ch1/hypothesis-space.svg" />
 \\[4\times3\times3\times=36\text{种假设}\\]
-\\[\varnothing\quad\text{也为1种假设}\\]
+\\[\emptyset\quad\text{也为1种假设}\\]
 \\[\text{因此共有}36+1=37\text{种假设}\\]
 
 版本空间(version space)：
