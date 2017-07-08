@@ -242,7 +242,7 @@ y
 \bbox[white,5px,border:1px solid blue]
 {
   {
-  \text{(好瓜)}\leftrightarrow\text{(色泽=\*)}\wedge\text{(根蒂=\*)}\wedge\text{(敲声=浑浊)}
+  \text{(好瓜)}\leftrightarrow\text{(色泽=\*)}\wedge\text{(根蒂=\*)}\wedge\text{(敲声=浊响)}
   }
 } \\\  
 \downarrow & \downarrow \\\  
