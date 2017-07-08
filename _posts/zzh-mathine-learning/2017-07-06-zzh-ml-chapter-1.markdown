@@ -242,7 +242,7 @@ y
   \text{(好瓜)}\leftrightarrow\text{(色泽=\*)}\wedge\text{(根蒂=\*)}\wedge\text{(敲声=浑浊)}
   }
 } \\\  
-\downarrow & \downarrow \\\\
+\downarrow & \downarrow \\\  
 \text{好瓜} & \color{red}{不是好瓜}
 \end{array}
 \\]
