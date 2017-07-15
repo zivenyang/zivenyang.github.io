@@ -24,5 +24,5 @@ PS：配合`Ctrl+f`食用更佳”
 解决办法：我遇到这个问题是在`matplotlib中`的`plt.title()`中的，`plt.title()`默认ASCII编码，不直接支持中文编码，因此一般使用`plt.title(u'标题')`来解决，而对于变量可以使用一下方式解决：
 ```python
 text = '标题'
-`plt.title(s=unicode(text, 'utf-8'))`
+plt.title(s=unicode(text, 'utf-8'))
 ```
