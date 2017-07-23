@@ -18,17 +18,19 @@ tags:
 ## 重点：
 ### 1. 经验误差与过拟合
 错误率(error rate): \\\(E=\frac{a}{m}\\\)  
+
 精度(accuracy): \\(1-E=(1-\frac{a}{m})\times\text{100%}\\)  
+
 \\[
 \text{误差(error)}
 \begin{cases}
 \text{在训练集上的误差}\longrightarrow\text{训练误差(training error)或经验误差(empirical error)}   \\\  
-\text{在新样本上的误差}\longrightarrow\text{泛化误差(
-  generalization error
-  )}
+\text{在新样本上的误差}\longrightarrow\text{泛化误差(generalization error)}
 \end{cases}
 \\]
+
 过拟合(overfitting):学习器把训练样本学得“太好”，把训练样本自身的一些特点当作了所有潜在样本都会具有的一般性质，这样就会导致泛化性能下降。*即不仅拟合了训练样本的共性特征也过多地拟合了训练样本的个性特征，从而对未在训练样本中出现过新样本的预测能力很弱*   
+
 欠拟合(underfitting):对训练样本的一般性质尚未学好。*即对共性特征都没学好*  
 
 ### 2. 评估方法
