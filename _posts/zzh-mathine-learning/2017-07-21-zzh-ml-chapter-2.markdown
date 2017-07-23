@@ -60,7 +60,7 @@ tags:
 \bbox[#AFF,5px,border:1px solid black]
 {
   {
-  \text{测试样本T}
+  \text{测试样本T}\\,
   }
 }
 \end{array}
