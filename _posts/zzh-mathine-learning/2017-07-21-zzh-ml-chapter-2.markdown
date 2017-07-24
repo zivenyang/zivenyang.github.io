@@ -73,7 +73,7 @@ tags:
 > 又称\\(k\\)折交叉验证(\\(k\\)-fold cross validation)
 
 方法：
-1. 将数据集分为\\(k\\)个大小相似的互斥矩阵即\\(D=D_{1}\cup D_{2}\cup D_{3}\cdots\cup D_{k}, D_{i}\cap D_{j}=\emptyset(i\neq j)\\)。  
+1. 将数据集分为\\(k\\)个大小相似的互斥矩阵即\\(D=D_{1}\cup D_{2}\cup D_{3}\cdots\cup D_{k}, \quad D_{i}\cap D_{j}=\emptyset(i\neq j)\\)。  
 每个子集\\(D_{i}\\)都尽可能保持数据分布的一致性。(图中\\(k=10\\))
   ![10折交叉验证示意图1](/img/in-post/zzh-machine-learning/ch2/10-fold_cross_validation1.png)
 2. 每次用\\(k-1\\)个子集的并集作为训练集，余下的那个子集作为测试集。
