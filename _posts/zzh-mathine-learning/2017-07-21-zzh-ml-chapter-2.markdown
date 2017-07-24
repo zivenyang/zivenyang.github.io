@@ -17,7 +17,7 @@ tags:
 
 ## 重点：
 ### 1. 经验误差与过拟合
-错误率(error rate): \\\(E=\frac{a}{m}\\\)  
+错误率(error rate): \\(E=\frac{a}{m}\\)  
 
 精度(accuracy): \\(1-E=(1-\frac{a}{m})\times\text{100%}\\)  
 
@@ -39,7 +39,8 @@ tags:
 而我们只有一个包含有\\(m\\)个样例的数据集\\(\\{(x_{1},y_{1}), (x_{2},y_{2}),\cdots,(x_{m},y_{m})\\}\\)，既要训练又要测试，怎样对学习的泛化误差进行评估并做出选择呢？我们可以通过对\\(D\\)进行适当的处理，从中产生出训练集\\(S\\)和测试集\\(T\\)的方法。    
 
 #### 2.1 留出法(hold-out)
-直接将数据集\\(D\\)划分成两个互斥的集合*(训练/测试集的划分要尽可能保持数据分布的一致性，可以使用分层采样(stratified sampling))* ，其中一个集合作为训练集\\(S\\)，另一个集合作为测试集\\(T\\)，即：   
+方法：
+直接将数据集\\(D\\)划分成两个互斥的集合*(训练/测试集的划分要尽可能保持数据分布的一致性，可以使用分层采样(stratified sampling))* ，其中一个集合作为训练集\\(S\\)，另一个集合作为测试集\\(T\\)   
 \\[D=S\cup\text{T},\qquad\text{S}\cup\text{T}=\emptyset\\]
 
 \\[
@@ -47,23 +48,51 @@ tags:
 \bbox[#A8F,5px,border:1px solid black]
 {
   {
-  \quad\quad\quad\quad\quad\text{数据集D}\quad\quad\quad\quad\quad
+  \quad\quad\quad\quad\quad\text{数据集}D\quad\quad\quad\quad\quad
   }
 }   \\\   
 \downarrow  \\\   
 \bbox[white,5px,border:1px solid black]
 {
   {
-    \\;\quad\quad\text{训练样本S}\quad\quad\\;\\,
+    \\;\quad\quad\text{训练样本}S\quad\quad\\;\\,
   }
 }
 \bbox[#AFF,5px,border:1px solid black]
 {
   {
-  \text{测试样本T}\\,
+  \text{测试样本}T\\,
   }
 }
 \end{array}
 \\]   
 
 单次使用留出法得到的估计结果往往不够可靠，在使用留出法时，一般要采用若干次随机划分，重复进行实验评估后取平均值作为留出法的评估结果。
+
+#### 2.2 交叉验证法(cross validation)
+> 又称k折交叉验证(k-fold cross validation)
+
+方法：
+1. 将数据集分为k个大小相似的互斥矩阵即\\(D=D_{1}\cup D_{2}\cup D_{3}\cdots\cup D_{k}, D_{i}\cap D_{j}=\emptyset(i\neq j)\\)。每个子集\\(D_{i}\\)都尽可能保持数据分布的一致性。(图中k=10)
+  ![10折交叉验证示意图1](/img/in-post/zzh-machine-learning/ch2/10-fold_cross_validation1.png)
+2. 每次用k-1个子集的并集作为训练集，余下的那个子集作为测试集。
+3. 获得k组训练/测试集，从而进行k次训练和测试。
+4. 将k个测试结果的均值作为最终结果。
+  ![10折交叉验证示意图2](/img/in-post/zzh-machine-learning/ch2/10-fold_cross_validation2.png)
+5. 为了减小因样本划分不同而引入的差别，k折交叉验证通常需要随机使用不同的划分重复p次。
+6. 最终的评估结果是这p次k折交叉验证结果的均值。
+
+留一法(Leave-One-Out,简称LOO)：
+假定数据集包含\\(m\\)个样本，若令\\(k=m\\)，则在k折交叉验证中训练集由\\(m-1\\)个样本组成，而测试集只有一个样本。
+* 优点：评估结果准确
+* 缺点：当数据集过大时，计算开销大
+
+#### 2.3 自助法(bootstrapping)
+方法：
+以自助采样(bootstrap sampling)为基础，假设给定包含\\(m\\)个样本的数据集\\(D\\)，对其拷贝放入\\(D'\\)
+1. 每次随机从\\(D\\)中挑选一个样本，将其`拷贝`放入\\(D'\\)。
+2. 将步骤1重复执行\\(m\\)次，此时我们得到了包含\\(m\\)个样本的数据集\\(D'\\)
+3. 将数据集\\(D'\\)用作训练集，\\(D\setminus D'\\)*(\\(\setminus\\)为集合减法，\\(D\\)中有而\\(D'\\)中没有的样本)* 用作测试集。
+这样的测试结果亦称包外估计(out-of-bag extimate)
+
+`自助法`在数据集较小，难以有效划分训练/测试集时很有用；而在初始数据量足够多时，`留出法`和`交叉验证法`更常用一些。
