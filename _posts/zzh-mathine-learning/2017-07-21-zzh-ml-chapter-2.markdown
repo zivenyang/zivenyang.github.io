@@ -127,7 +127,7 @@ tags:
 1. 错误率与精度：
   对于样例集\\(D\\)，分类错误率定义为：
   \\[E(f;D)=\frac{1}{m}\sum_{i=1}^{m} \mathbb{I}(f(x_{i}\neq y_{i}))\\]
-  其中\\(\mathbb{I}(cdot)\\)为指示函数
+  其中\\(\mathbb{I}(\cdot)\\)为指示函数
   \\[\mathbb{I}(\cdot)=\begin{cases}0\quad\cdot为假 \\\ 1\quad\cdot为真\end{cases}\\]
   精度定义为：
   \\[\begin{align}
