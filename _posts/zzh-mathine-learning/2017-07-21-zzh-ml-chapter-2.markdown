@@ -53,7 +53,7 @@ tags:
 #### 2.1 留出法(hold-out)
 方法：  
 直接将数据集\\(D\\)划分成两个互斥的集合*(训练/测试集的划分要尽可能保持数据分布的一致性，可以使用分层采样(stratified sampling))* ，其中一个集合作为训练集\\(S\\)，另一个集合作为测试集\\(T\\)   
-\\[D=S\cup\text{T},\qquad\text{S}\cup\text{T}=\varnothing\\]
+\\[D=S\cup T ,\qquad S \cup T=\varnothing\\]
 
 \\[
 \begin{array}{cc}
