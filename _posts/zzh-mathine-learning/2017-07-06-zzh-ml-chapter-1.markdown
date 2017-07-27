@@ -208,7 +208,7 @@ y
 
 <img src="/img/in-post/zzh-machine-learning/ch1/hypothesis-space.svg" />
 \\[4\times3\times3=36\text{种假设}\\]
-\\[\emptyset\quad\text{也为1种假设}\\]
+\\[\varnothing\quad\text{也为1种假设}\\]
 \\[\text{因此共有}36+1=37\text{种假设}\\]
 
 需注意的是，现实问题中我们常面临很大的假设空间，单学习过程是基于有限样本训练集进行的，因此，可能有多个假设与训练集一致，即存在着一个与训练集一致的“假设集合”，我们称之为“版本空间(version space)”。
