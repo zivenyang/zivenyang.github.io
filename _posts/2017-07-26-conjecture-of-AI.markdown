@@ -4,7 +4,7 @@ title:        "关于AI的胡思乱想"
 subtitle:     " \"中二少年一本正经的胡说八道\""
 date:         2017-07-26
 author:       "Ziven"
-header-img:   "img/in-post/theano-tf/bg.jpg"
+header-img:   "img/in-post/conjecture-of-AI/bg.jpg"
 header-mask:  0.3
 catalog:      true
 tags:
