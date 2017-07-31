@@ -83,29 +83,24 @@ layout: default
                     {% endif %}
                 </ul>
 
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8yOTg2Mi82NDI4">
+    	<script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
 
-		<!--PC和WAP自适应版-->
-		<div id="SOHUCS" ></div>
-		<script type="text/javascript">
-		(function(){
-		var appid = 'cyt6A64Ym';
-		var conf = 'prod_16fd8ec61ae216a6fa409a182ed47636';
-		var width = window.innerWidth || document.documentElement.clientWidth;
-		if (width < 960) {
-		window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+           if (typeof LivereTower === 'function') { return; }
 
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
 
-		<!-- <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-		<script>
-  			var cloudTieConfig = {
-    				url: document.location.href,
-    				sourceId: "",
-    				productKey: "e0d998afb4494d749e05711f66cb2b20",
-    				target: "cloud-tie-wrapper"
-  			};
-		</script>
-		<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script> -->
-
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    	</script>
+    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
 
     <!-- disqus 百度分享 start (一个网页只需插入一次) -->
     <!-- <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":["weixin","sqq","qzone","tsina","douban","fbook","twi","copy","print"],"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"5","bdPos":"right","bdTop":"150.99996948242188"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script> -->
