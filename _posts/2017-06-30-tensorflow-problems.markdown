@@ -26,3 +26,13 @@ PS：配合`Ctrl+f`食用更佳”
 text = '标题'
 plt.title(s=unicode(text, 'utf-8'))
 ```
+
+###### Tensorflow 正则化方法：
+```python
+tf.add_to_collection(tf.GraphKeys.WEIGHTS, W_2)
+tf.add_to_collection(tf.GraphKeys.WEIGHTS, W_3)
+regularizer = tf.contrib.layers.l2_regularizer(scale=5.0/50000)
+reg_term = tf.contrib.layers.apply_regularization(regularizer)
+
+loss = (tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=y_, logits=z_3)) + reg_term)
+```
