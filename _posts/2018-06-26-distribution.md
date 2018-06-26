@@ -54,6 +54,7 @@ $$
 X=\sum^{n}_{i=1}{X_i}
 \end{align}
 $$
+
 其中$$X_i=b(i;n,p)=C^{i}_{n}p^i(1-p)^{n-i}$$  
 
 **方法一：** 由于$$X_i$$相互独立且均服从参数为$$p$$的$$0-1$$分布，故期望为：  
@@ -62,12 +63,14 @@ $$
 E(X)=\sum^{n}_{i=1}E(X_i)=np
 \end{align}
 $$
+
 其方差为：  
 $$
 \begin{align}
 D(X)=\sum^{n}_{i=1}D(X_i)=np(1-p)
 \end{align}
 $$
+
 **方法二：**  
 
 预备知识:  
@@ -77,7 +80,8 @@ X_i=b(i;n,p)=C^{i}_{n}p^i(1-p)^{n-i}\\
 (a+b)^{n}=\sum_{i=0}^{n} C_{n}^{i}a^nb^{n-i}
 \end{align}
 $$
-期望为：    
+
+期望为：     
 $$
 \begin{align}
 E(X)&=\sum_{k=0}^{n}kC_{n}^{k}p^k(1-p)^{n-k}\\
@@ -99,6 +103,7 @@ D(X)&=E(X^2)-[E(X)]^2\\
 &=E(X^2)-n^2p^2
 \end{align}
 $$
+
 其中：  
 
 | $$\zeta$$ |             0             |              1              |              4              | $$\cdots$$ | $$n^2$$                   |
