@@ -10,10 +10,103 @@ catalog:      true
 tags:
     - 机器学习
 ---
+# 随机变量
 
-# 常见的离散型随机变量的分布
+设$$S=\{e\}$$为随机试验$$E$$的样本空间，如果对于每一个$$e\in S$$，都有一个实数$$X(e)$$与之对应，这样就得到一个定义在$$S$$上的实值单值函数$$X(e)$$，称$$X(e)$$为定义在$$S$$上的一个**随机变量（random variable）**，简记为$$X$$。$$X$$的可能取值可写成$$x_1,x_2, x_3, \cdots,x_k, \cdots$$。     
 
-## 两点分布（Bernoulli distribution）
+随机变量是可以随机地取不同值的变量，一个随机变量只是对可能的状态的描述，它必须伴随着一个概率分布来指定每个状态的可能性。     
+
+****
+
+
+
+## 离散型随机变量
+
+如果一个随机变量$$X$$的全部可能取值为有限个或者可列多个，则称$$X$$为**离散型随机变量（discrete randomvariable）**。       
+
+离散型随机变量的概率分布可用**概率质量函数(probability mass function, PMF)**来描述，即：        
+$$
+\begin{align}
+P(X=x_k)=p_k,\quad k=1, 2,\cdots
+\end{align}
+$$
+如果一个函数$$P$$是随机变量$$X$$的PMF，必须满足下面几个条件：      
+
+* $$P$$的定义域必须是$$X$$所有可能状态的集合；      
+
+* $$\forall x\in X,0\leqslant P(x)\leqslant 1$$；    
+
+* $$\sum_{x\in X}P(x)=1$$。     
+
+  
+
+**期望**：   
+$$
+\begin{align}
+E(X)=\sum_{k=0}^{\infty}x_kP(X=x_k)
+\end{align}
+$$
+
+
+**方差**：   
+$$
+\begin{align}
+D(X) & = \sum_{0}^{\infty}[x_k-E(X)]^2P(X=x_k)\\
+&=E[X-E(X)]^2 \\
+&=E[X^2-2XE(X)+[E(X)]^2] \\
+&=E[X^2]-2E(X)E(X)+[E(X)]^2\\
+&=E[X^2]-[E(X)]^2\\
+\end{align}
+$$
+
+****
+
+
+
+## 连续型随机变量
+
+对于非离散型随机变量，其中有一类重要且常见的随机变量，就是所谓的连续型随机变量，这类随机变量的值域是一个区间（或几个区间的并）。
+
+设随机变量$$X$$的分布函数为$$F(x)$$，如果存在非负函数$$f(x)$$，使得对任意实数$$x$$，有：  
+$$
+\begin{align}
+F(X)=\int_{-\infty}^{x}f(x)dx
+\end{align}    
+$$
+则称$$X$$为**连续型随机变量（continuous random variable）**。称$$f(x)$$为$$X$$的**概率密度函数（probability density function）**。    
+
+如果一个函数$$f(x)$$是$$X$$的概率密度函数，必须满足下面几个条件：   
+
+* $$f(x)$$的值域必须是$$X$$的所有可能状态的集合；
+* $$\forall x\in X,f(x)\geqslant0$$;  
+* $$\int f(x)dx=1$$;  
+
+
+
+**期望**：    
+$$
+\begin{align}
+E(X)=\int_{-\infty}^{+\infty}xf(x)dx
+\end{align}   
+$$
+**方差**：
+$$
+\begin{align}
+D(X) &= \int_{-\infty}^{+\infty}[x-E(X)]^2f(x)dx\\
+&=E[X-E(X)]^2 \\
+&=E[X^2-2XE(X)+[E(X)]^2] \\
+&=E[X^2]-2E(X)E(X)+[E(X)]^2\\
+&=E[X^2]-[E(X)]^2\\
+\end{align}     
+$$
+
+****
+
+
+
+## 常见的离散型随机变量的分布
+
+### 两点分布（Bernoulli distribution）
 
 | $$X$$ | $$1$$ |  $$0$$  |
 | :---: | :---: | :-----: |
@@ -37,21 +130,18 @@ $$
 方差：  
 $$
 \begin{align}
-D(X) & = E[X-E(X)]^2 \\
-&=E[X^2-2XE(X)+[E(X)]^2] \\
-&=E[X^2]-2E(X)E(X)+[E(X)]^2\\
-&=E[X^2]-[E(X)]^2\\
+D(X) & = E[X^2]-[E(X)]^2\\
 &=1^2\cdot p+0^2\cdot (1-p)-p^2\\
 &=p-p^2\\
 &=p(1-p)
-\end{align}
+\end{align}    
 $$
 
 ******
 
 
 
-## 二项分布（Binomial distribution）
+### 二项分布（Binomial distribution）
 
 | $$X$$ |   0   |   1   |   2   |   $$\cdots$$   |   $$n$$   |
 | :-----: | :----: | :----: | :----: | :----: | :----: |
@@ -176,7 +266,7 @@ $$
 
 
 
-## 负二项分布
+### 负二项分布
 
 | $$X$$ |           $$r$$           |           $$r+1$$           |           $$r+2$$           | $$\cdots$$ |
 | :---: | :-----------------------: | :-------------------------: | :-------------------------: | :--------: |
@@ -203,8 +293,10 @@ $$
 P(X=k;r,p)=C_{k+r-1}^{r-1}p^{r}(1-p)^{k},\quad k\in [0, 1, 2, \cdots, \infty)
 $$
 
+******
 
-## 泊松分布（Poisson distribution）
+
+### 泊松分布（Poisson distribution）
 
 若随机变量$$X$$的所有可能取值为一切非负整数，且它的分布律为：    
 $$
@@ -241,7 +333,7 @@ E(X)&=\sum_{k=0}^{\infty}k\frac{\lambda^{k}}{k!}e^{-\lambda}\\
 &=\lambda e^{-\lambda}\sum_{k=1}^{\infty}\frac{\lambda^{k-1}}{(k-1)!}\\
 &=\lambda e^{-\lambda}e^{\lambda}\\
 &=\lambda
-\end{align}
+\end{align}     
 $$
 
 
@@ -257,17 +349,17 @@ D(X)&=E(X^2)-[E(X)]^2\\
 &=\lambda^2\sum_{k=2}^{\infty}\frac{\lambda^{k-2}}{(k-2)!}e^{-\lambda}+\lambda-\lambda^2\\
 &=\lambda^2+\lambda-\lambda^2\\
 &=\lambda
-\end{align}
+\end{align}      
 $$
 
 
-故泊松分布的期望与方差都等于参数$$\lambda$$   
+故泊松分布的期望与方差都等于参数$$\lambda​$$   
 
 
 
 泊松分布与二项分布的关系：   
 
-若$$X\sim B(n,p)$$，当$$n$$比较大而$$p$$又很小时，泊松分布近似二项分布，即：   
+若$$X\sim B(n,p)$$，当$$n$$比较大而$$p$$又很小时，二项分布近似泊松分布，即：   
 $$
 \begin{align}
 P(X=k)=C_n^kp^k(1-p)^{n-k}\approx \frac{\lambda^k}{k!}e^{-\lambda},\quad k=0, 1, 2, \cdots
@@ -277,7 +369,7 @@ $$
 
 其中，$$\lambda=np$$ 。
 
-**证明** 设随机变量$$X_n\sim B(n, p_n)$$，且$$\lim_{x \to \infty}np_n=\lambda$$，其中$$\lambda \gt 0 $$为常量，则记$$np_n=\lambda_n$$，即$$p_n=\frac{\lambda_n}{n}$$，得：   
+**证明** 设随机变量$$X_n\sim B(n, p_n)$$，且$$\lim_{x \to \infty}np_n=\lambda$$，其中$$\lambda \gt 0 $$为常量，则记$$np_n=\lambda_n$$，即$$p_n=\frac{\lambda_n}{n}$$，得：    
 $$
 \begin{align}
 C_n^kp_n^k(1-p_n)^{n-k}&=\frac{n(n-1)\cdots(n-k+1)}{k!}(\frac{\lambda_n}{n})^k(\frac{n-\lambda_n}{n})^{n-k}\\
@@ -301,9 +393,42 @@ $$
 
 ****
 
+## 常见的连续型随机变量的分布
+
+###均匀分布（Uniform Distribution）
 
 
 
+*****
 
 
+
+### 指数分布（Exponential Distribution）
+
+
+
+*****
+
+
+
+### 正态分布（Normal/Gaussian distribution）
+
+
+
+******
+
+
+
+## 总结
+
+
+
+|   分布   | 参数 | 期望 | 方差 |
+| :------: | ---- | ---- | ---- |
+| 两点分布 |      |      |      |
+| 二项分布 |      |      |      |
+| 泊松分布 |      |      |      |
+| 均匀分布 |      |      |      |
+| 指数分布 |      |      |      |
+| 正态分布 |      |      |      |
 
