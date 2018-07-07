@@ -83,13 +83,15 @@ $$
 
 
 
-**期望**：    
+**期望**：      
 $$
 \begin{align}
 E(X)=\int_{-\infty}^{+\infty}xf(x)dx
-\end{align}   
+\end{align}
 $$
-**方差**：
+
+
+**方差**：     
 $$
 \begin{align}
 D(X) &= \int_{-\infty}^{+\infty}[x-E(X)]^2f(x)dx\\
@@ -97,7 +99,7 @@ D(X) &= \int_{-\infty}^{+\infty}[x-E(X)]^2f(x)dx\\
 &=E[X^2-2XE(X)+[E(X)]^2] \\
 &=E[X^2]-2E(X)E(X)+[E(X)]^2\\
 &=E[X^2]-[E(X)]^2\\
-\end{align}     
+\end{align}
 $$
 
 ****
@@ -127,7 +129,7 @@ $$
 
 
 
-方差：  
+方差：   
 $$
 \begin{align}
 D(X) & = E[X^2]-[E(X)]^2\\
@@ -147,7 +149,7 @@ $$
 | :-----: | :----: | :----: | :----: | :----: | :----: |
 |   $$P$$   |   $$C^{0}_{n}p^0(1-p)^{n}$$   |   $$C^{1}_{n}p^1(1-p)^{n-1}$$   |   $$C^{2}_{n}p^2(1-p)^{n-2}$$   |   $$\cdots$$   |   $$C^{n}_{n}p^n(1-p)^{0}$$   |
 
-若随机变量$$X$$的所有可能取值为$$0, 1, 2, \cdots, n$$ ，且它的分布律为
+若随机变量$$X$$的所有可能取值为$$0, 1, 2, \cdots, n$$ ，且它的分布律为       
 $$
 \begin{align}
 P(X=k)=C_{n}^{k}p^{k}(1-p)^{n-k},\quad k=0, 1, 2,\cdots,n\quad (0\lt p\lt 1)
@@ -155,20 +157,21 @@ P(X=k)=C_{n}^{k}p^{k}(1-p)^{n-k},\quad k=0, 1, 2,\cdots,n\quad (0\lt p\lt 1)
 $$
 
 
-则称随机变量$$X$$服从参数为$$n,p$$ 的二项分布，记为$$X\sim B(n,p)$$  
+
+则称随机变量$$X$$服从参数为$$n,p$$ 的二项分布，记为$$X\sim B(n,p)$$       
 
 
 
-在$$n$$重伯努利试验中，以$$X$$表示事件$$A$$发生的次数，它的可能取值为$$1, 2, 3, \cdots , n$$，且由二项概率公式有： 
+在$$n$$重伯努利试验中，以$$X$$表示事件$$A$$发生的次数，它的可能取值为$$1, 2, 3, \cdots , n$$，且由二项概率公式有：     
 $$
 \begin{align}
 P(X=k)=P_n(k)=C_{n}^{k}p^{k}(1-p)^{n-k},\quad k=0, 1, 2,\cdots,n
 \end{align}
 $$
 
-
-
 即$$X\sim B(n,p)$$。因此，我们常用二项分布来描述可重复进行独立试验的随机现象。
+
+
 
 **方法一：** 由于$$(X=k)$$相互独立且均服从参数为$$p$$的$$0-1$$分布，故期望为：  
 $$
@@ -184,19 +187,20 @@ D(X)=\sum^{n}_{i=1}D(X=k)=np(1-p)
 \end{align}
 $$
 
+
+
 **方法二：**  
 
-预备知识:  
+预备知识:    
 $$
 \begin{align}
-
 (a+b)^{n}=\sum_{i=0}^{n} C_{n}^{i}a^nb^{n-i}
 \end{align}
 $$
 
 
 
-期望为：     
+期望为：       
 $$
 \begin{align}
 E(X)&=\sum_{k=0}^{n}kC_{n}^{k}p^k(1-p)^{n-k}\\
@@ -366,8 +370,9 @@ P(X=k)=C_n^kp^k(1-p)^{n-k}\approx \frac{\lambda^k}{k!}e^{-\lambda},\quad k=0, 1,
 \end{align}
 $$
 
+其中，$$\lambda=np$$ 。  
 
-其中，$$\lambda=np$$ 。
+
 
 **证明** 设随机变量$$X_n\sim B(n, p_n)$$，且$$\lim_{x \to \infty}np_n=\lambda$$，其中$$\lambda \gt 0 $$为常量，则记$$np_n=\lambda_n$$，即$$p_n=\frac{\lambda_n}{n}$$，得：    
 $$
@@ -379,14 +384,17 @@ C_n^kp_n^k(1-p_n)^{n-k}&=\frac{n(n-1)\cdots(n-k+1)}{k!}(\frac{\lambda_n}{n})^k(\
 $$
 
 
-其中    
+
+其中         
 $$
 \begin{align}
 &\lim_{n\to \infty}\lambda_n^k=\lambda_k,  &\lim_{n \to\infty}(1-\frac{\lambda_n}{n})^n=\lim_{n\to \infty}(1-\frac{\lambda_n}{n})^{-\frac{\lambda_n}{n}\cdot(-\lambda_n)}=e^{-\lambda},\\
 &\lim_{n\to \infty}(1-\frac{\lambda_n}{n})^{-k}=1,  &\lim_{n \to\infty}[1\cdot(1-\frac{1}{n})\cdots(1-\frac{k-1}{n})]=1.
 \end{align}
 $$
-故    
+
+
+故       
 $$
 \lim_{n\to \infty}P(X_n=k)=\lim_{n\to \infty}C_n^kp^k(1-p)^{n-k}= \frac{\lambda^k}{k!}e^{-\lambda},\quad k=0, 1, 2, \cdots
 $$
