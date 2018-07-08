@@ -405,15 +405,92 @@ $$
 
 ###均匀分布（Uniform Distribution）
 
+若随机变量$$X$$满足的概率密度函数为：  
+$$
+\begin{align}
+f(x)=F'(x)=
+\begin{cases}
+\frac{1}{b-a},&a\lt x\lt b,\\
+0,&\text{其他.}
+\end{cases}
+\end{align}
+$$
 
+
+则称$$X$$在$$(a,b)$$上服从**均匀分布(uniform distribution)**，记为$$X\sim U(a, b)$$ 。    
+
+**期望：**    
+$$
+\begin{align}
+E(X) &= \int_{-\infty}^{+\infty}xf(x)dx\\
+&=\int_{a}^{b}\frac{1}{b-a}xdx\\
+&=\frac{1}{b-a}\cdot \frac{x^2}{2}\bigg| _{a}^{b}\\
+&=\frac{1}{b-a}\cdot \frac{(b-a)(b+a)}{2}\\
+&=\frac{a+b}{2}
+\end{align}
+$$
+
+
+**方差：**   
+$$
+\begin{align}
+D(x)&=E(x^2)-[E(x)]^2\\
+&= \int_{-\infty}^{+\infty}x^2f(x^2)dx-(\frac{a+b}{2})^2\\
+&=\int_{a}^{b}\frac{1}{b-a}x^2dx-(\frac{a+b}{2})^2\\
+&=\frac{1}{b-a}\cdot \frac{x^3}{3}\bigg| _{a}^{b}-(\frac{a+b}{2})^2\\
+&=\frac{1}{b-a}\cdot \frac{(b-a)(a^2+ab+b^2)}{3}-(\frac{a+b}{2})^2\\
+&=\frac{a^2+ab+b^2}{3}-(\frac{a+b}{2})^2\\
+&=\frac{(b-a)^2}{12}
+\end{align}
+$$
 
 *****
 
-
-
 ### 指数分布（Exponential Distribution）
 
+若随机变量$$X$$的概率密度函数为：   
+$$
+\begin{align}
+f(x)=
+\begin{cases}
+\lambda e^{-\lambda x},&x\gt0,\\
+0, &x\le 0.
+\end{cases}
+\end{align}
+$$
 
+
+
+其中常数$$\lambda\gt 0$$，则称$$X$$服从参数为$$\lambda$$的**指数分布（exponential distribution）**。    
+
+**期望：**   
+$$
+\begin{align}
+E(X) &= \int_{-\infty}^{+\infty}xf(x)dx\\
+&=\int_0^{+\infty}\lambda xe^{-\lambda x}dx\\
+&=-\int_0^{+\infty}xde^{-\lambda x}\\
+&=-xe^{-\lambda x}\big|_0^{+\infty}+\int_0^{+\infty}e^{-\lambda x}dx\\
+&=\int_0^{+\infty}e^{-\lambda x}dx\\
+&=-\frac{1}{\lambda}e^{-\lambda x}\big|_0^{+\infty}\\
+&=-\frac{1}{\lambda}\cdot(0-1)\\
+&=\frac{1}{\lambda}
+\end{align}
+$$
+
+
+**方差：**    
+$$
+\begin{align}
+D(x)&=E(x^2)-[E(x)]^2\\
+&= \int_{-\infty}^{+\infty}x^2f(x)dx-\frac{1}{\lambda ^2}\\
+&=\int_0^{+\infty}\lambda x^2 e^{-\lambda x}dx-\frac{1}{\lambda ^2}\\
+&=\int_0^{+\infty}x^2de^{-\lambda x}-\frac{1}{\lambda ^2}\\
+&=-\frac{1}{\lambda}(x^2e^{-\lambda x}\big|_0^{+\infty}-\int_0^{+\infty}e^{-\lambda x}dx^2)-\frac{1}{\lambda ^2}\\
+&=\frac{1}{\lambda}\int_0^{+\infty}2xe^{-\lambda x}dx-\frac{1}{\lambda ^2}\\
+&=\frac{1}{\lambda}\cdot \frac{2}{\lambda}-\frac{1}{\lambda ^2}\\
+&=\frac{1}{\lambda ^2}
+\end{align}
+$$
 
 *****
 
