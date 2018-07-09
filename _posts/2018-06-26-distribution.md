@@ -10,8 +10,6 @@ catalog:      true
 tags:
     - 机器学习
 ---
-[TOC]
-
 # 随机变量
 
 设$$S=\{e\}$$为随机试验$$E$$的样本空间，如果对于每一个$$e\in S$$，都有一个实数$$X(e)$$与之对应，这样就得到一个定义在$$S$$上的实值单值函数$$X(e)$$，称$$X(e)$$为定义在$$S$$上的一个**随机变量（random variable）**，简记为$$X$$。$$X$$的可能取值可写成$$x_1,x_2, x_3, \cdots,x_k, \cdots$$。     
@@ -43,15 +41,15 @@ P(X=x_k)=p_k,\quad k=1, 2,\cdots
   
 
 **期望**：   
-\\[
+$$
 \begin{align}
 E(X)=\sum_{k=0}^{\infty}x_kP(X=x_k)
 \end{align}
-\\]
+$$
 
 
 **方差**：   
-\\[
+$$
 \begin{align}
 D(X) & = \sum_{0}^{\infty}[x_k-E(X)]^2P(X=x_k)\\
 &=E[X-E(X)]^2 \\
@@ -59,7 +57,7 @@ D(X) & = \sum_{0}^{\infty}[x_k-E(X)]^2P(X=x_k)\\
 &=E[X^2]-2E(X)E(X)+[E(X)]^2\\
 &=E[X^2]-[E(X)]^2\\
 \end{align}
-\\]
+$$
 
 ****
 
@@ -591,7 +589,7 @@ $$
 
 
 
-**方差：**
+**方差：**   
 $$
 \begin{align}
 D(X)&=E([X-E(X)]^2)\\
