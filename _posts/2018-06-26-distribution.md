@@ -10,6 +10,8 @@ catalog:      true
 tags:
     - 机器学习
 ---
+[TOC]
+
 # 随机变量
 
 设$$S=\{e\}$$为随机试验$$E$$的样本空间，如果对于每一个$$e\in S$$，都有一个实数$$X(e)$$与之对应，这样就得到一个定义在$$S$$上的实值单值函数$$X(e)$$，称$$X(e)$$为定义在$$S$$上的一个**随机变量（random variable）**，简记为$$X$$。$$X$$的可能取值可写成$$x_1,x_2, x_3, \cdots,x_k, \cdots$$。     
@@ -25,11 +27,11 @@ tags:
 如果一个随机变量$$X$$的全部可能取值为有限个或者可列多个，则称$$X$$为**离散型随机变量（discrete randomvariable）**。       
 
 离散型随机变量的概率分布可用**概率质量函数(probability mass function, PMF)**来描述，即：        
-$$
+\\[
 \begin{align}
 P(X=x_k)=p_k,\quad k=1, 2,\cdots
 \end{align}
-$$
+\\]
 如果一个函数$$P$$是随机变量$$X$$的PMF，必须满足下面几个条件：      
 
 * $$P$$的定义域必须是$$X$$所有可能状态的集合；      
@@ -41,15 +43,15 @@ $$
   
 
 **期望**：   
-$$
+\\[
 \begin{align}
 E(X)=\sum_{k=0}^{\infty}x_kP(X=x_k)
 \end{align}
-$$
+\\]
 
 
 **方差**：   
-$$
+\\[
 \begin{align}
 D(X) & = \sum_{0}^{\infty}[x_k-E(X)]^2P(X=x_k)\\
 &=E[X-E(X)]^2 \\
@@ -57,7 +59,7 @@ D(X) & = \sum_{0}^{\infty}[x_k-E(X)]^2P(X=x_k)\\
 &=E[X^2]-2E(X)E(X)+[E(X)]^2\\
 &=E[X^2]-[E(X)]^2\\
 \end{align}
-$$
+\\]
 
 ****
 
