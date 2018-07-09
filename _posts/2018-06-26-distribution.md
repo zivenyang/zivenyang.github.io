@@ -403,7 +403,7 @@ $$
 
 ## 常见的连续型随机变量的分布
 
-###均匀分布（Uniform Distribution）
+### 均匀分布（Uniform Distribution）
 
 若随机变量$$X$$满足的概率密度函数为：  
 $$
@@ -478,6 +478,7 @@ E(X) &= \int_{-\infty}^{+\infty}xf(x)dx\\
 $$
 
 
+
 **方差：**    
 $$
 \begin{align}
@@ -498,7 +499,109 @@ $$
 
 ### 正态分布（Normal/Gaussian distribution）
 
+若随机变量$$X$$的概率密度函数为：  
+$$
+\begin{align}
+f(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}},\quad -\infty \lt x\lt+\infty
+\end{align}
+$$
 
+
+
+其中$$\mu ,\sigma (\sigma \gt0)$$为常数，则称$$X$$服从参数为$$\mu, \sigma ^2$$的**正太分布（normal distribution）**，又称**高斯分布（Gauss distribution）**，记为$$X\sim N(\mu, \sigma^2)$$。     
+
+
+
+**预备知识1：**         
+
+令$$t=\frac{x-\mu}{\sigma}$$，则        
+$$
+\begin{align}
+\int_{-\infty}^{+\infty}f(x)dx&=\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}dx\\
+&=\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(\sigma t)^2}{2\sigma^2}}d(\sigma t + \mu)\\
+&=\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt\\
+\end{align}
+$$
+
+
+
+令$$I=\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx$$，则        
+$$
+\begin{align}
+I^2&=(\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx)^2\\
+&=\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx \times \int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{y^2}{2}}dy\\
+&=\frac{1}{2\pi}\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}e^{-\frac{x^2+y^2}{2}}dxdy
+\end{align}
+$$
+
+
+将坐标$$(x,y)$$转换为极坐标$$(r, \theta)$$：     
+$$
+\begin{cases}
+x=r\cdot cos\theta\\
+y=r\cdot sin\theta
+\end{cases}
+$$
+
+
+故：     
+$$
+\begin{align}
+I^2&=\frac{1}{2\pi}\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}e^{-\frac{x^2+y^2}{2}}dxdy\\
+&=\frac{1}{2\pi}\int_{0}^{2\pi}d\theta \int_{0}^{+\infty}r\cdot e^{-\frac{r^2}{2}}dr\\
+&=\frac{1}{2\pi}\theta \big|_0^{2\pi}\int_{0}^{+\infty}e^{-\frac{r^2}{2}}d\frac{r^2}{2}\\
+&=-e^{-\frac{r^2}{2}}\big |_0^{+\infty}\\
+&=-(0-1)\\
+&=1
+\end{align}
+$$
+
+
+
+因为$$f(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}\geqslant 0$$，故$$I=\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx=1$$。       
+
+
+
+**预备知识2：**         
+
+令$$f(x)=\frac{x}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}$$，因为$$f(x)=-f(-x)$$，故$$f(x)$$为奇函数，故：     
+$$
+\begin{align}
+\int_{-\infty}^{+\infty}f(x)dx=\int_{-\infty}^{+\infty}\frac{x}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx=0
+\end{align}
+$$
+
+
+
+**期望：**   
+$$
+\begin{align}
+E(X) &= \int_{-\infty}^{+\infty}xf(x)dx\\
+&=\int_{-\infty}^{+\infty}x\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}dx\qquad\text{令}t=\frac{x-\mu}{\sigma}\\
+&=\int_{-\infty}^{+\infty}(\mu+\sigma t)\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(\sigma t)^2}{2\sigma^2}}d(\sigma t + \mu)\\
+&=\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}(\mu+\sigma t)e^{-\frac{t^2}{2}}dt\\
+&=\int_{-\infty}^{+\infty}\frac{\mu}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt+\int_{-\infty}^{+\infty}\frac{\sigma t}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt\\
+&=\mu\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt+\sigma\int_{-\infty}^{+\infty}\frac{t}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt\\
+&=\mu\cdot 1+\sigma \cdot0\\
+&=\mu
+\end{align}
+$$
+
+
+
+**方差：**
+$$
+\begin{align}
+D(X)&=E([X-E(X)]^2)\\
+&=\int_{-\infty}^{+\infty}(x^2-\mu^2)\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}dx\quad \text{令}s=\frac{x-\mu}{\sigma}\\
+&=\int_{-\infty}^{+\infty}(s\sigma)^2\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(s\sigma)^2}{2\sigma^2}}d(s\sigma+\mu)\\
+&=\sigma^2\int_{-\infty}^{+\infty}s^2\frac{1}{\sqrt{2\pi}}e^{-\frac{s^2}{2}}ds\\
+&=-\sigma^2\int_{-\infty}^{+\infty}s\frac{1}{\sqrt{2\pi}}de^{-\frac{s^2}{2}}\\
+&=-\frac{\sigma^2}{\sqrt{2\pi}}\cdot se^{-\frac{s^2}{2}}\bigg|_{-\infty}^{+\infty}+\sigma^2\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{s^2}{2}}ds\\
+&=0+\sigma^2 \cdot 1\\
+&=\sigma^2
+\end{align}
+$$
 
 ******
 
@@ -506,14 +609,12 @@ $$
 
 ## 总结
 
-
-
-|   分布   | 参数 | 期望 | 方差 |
-| :------: | ---- | ---- | ---- |
-| 两点分布 |      |      |      |
-| 二项分布 |      |      |      |
-| 泊松分布 |      |      |      |
-| 均匀分布 |      |      |      |
-| 指数分布 |      |      |      |
-| 正态分布 |      |      |      |
+|   分布   |            参数             |     期望      |      方差       |
+| :------: | :-------------------------: | :-----------: | :-------------: |
+| 两点分布 |       $$0\lt p\lt1$$        |     $$p$$     |   $$p(1-p)$$    |
+| 二项分布 | $$n \geqslant1,0\lt p\lt1$$ |    $$np$$     |   $$np(1-p)$$   |
+| 泊松分布 |      $$\lambda \gt0$$       |  $$\lambda$$  |   $$\lambda$$   |
+| 均匀分布 |         $$a \lt b$$         |  $$(a+b)/2$$  | $$(b-a)^2/12$$  |
+| 指数分布 |   $$0 \lt \lambda \lt 1$$   | $$1/\lambda$$ | $$1/\lambda^2$$ |
+| 正态分布 |     $$\mu,\sigma \gt0$$     |    $$\mu$$    |  $$\sigma^2$$   |
 
