@@ -19,7 +19,7 @@ tags:
 
 在日常生活中，当我们判别一件商品的好坏时，经常会通过这类商品的某些属性来进行决策，例如判断一个西瓜是否是好瓜，我们通常会先观察这个西瓜的**色泽**是不是*青绿色*的，如果**色泽**是*青绿色*的则继续观察它的**根蒂**是不是*蜷缩*的，如果**根蒂**是*蜷缩*的，则会听听它的**敲声**是否*清脆*，如果满足以上一系列条件那么我们就将这个西瓜判别为很可能是个好瓜。以上的决策过程可以用下图的树形结构来表示，而上文中的粗体字即为样本的属性，斜体字即为对应熟悉的属性值，例如属性**色泽**有属性值：*青绿*、*乌黑*、*浅白*。       
 
-![1532846357225](D:\Works\GitHub\zivenyang.github.io\img\in-post\zzh-machine-learning\ch4\什么是决策树.png)   
+![1532846357225](/img/in-post/zzh-machine-learning/ch4/什么是决策树.png)   
 
 一般来讲，一颗决策树包含一个根结点，若干个内节点和若干个叶子结点，根结点中包含了**所有的样本**，而内结点中包含了所有满足从根结点到父结点中属性要求的**样本子集**，叶子结点即为满足这条分支上所有属性要求的样本所属的**类别**。       
 
@@ -58,7 +58,7 @@ tags:
   plt.show()
   ```
 
-![](D:\Works\GitHub\zivenyang.github.io\img\in-post\zzh-machine-learning\ch4\information_entropy.png)
+![](/img/in-post/zzh-machine-learning/ch4/information_entropy.png)
 
 ```python
 def Ent(D):
@@ -418,7 +418,7 @@ def createPlot(inTree):
 createPlot(t_ID3)
 ```
 
-![](D:\Works\GitHub\zivenyang.github.io\img\in-post\zzh-machine-learning\ch4\ID3.png)   
+![](/img/in-post/zzh-machine-learning/ch4/ID3.png)   
 
 
 
@@ -426,13 +426,13 @@ createPlot(t_ID3)
 createPlot(t_C45)
 ```
 
-![](D:\Works\GitHub\zivenyang.github.io\img\in-post\zzh-machine-learning\ch4\C45.png)   
+![](/img/in-post/zzh-machine-learning/ch4/C45.png)   
 
 ```python
 createPlot(t_CART)
 ```
 
-![](D:\Works\GitHub\zivenyang.github.io\img\in-post\zzh-machine-learning\ch4\CART.png)    
+![](/img/in-post/zzh-machine-learning/ch4/CART.png)    
 
 
 
@@ -479,7 +479,7 @@ model = TreeGenerate(D=train_set, A=set(train_set.columns)-set(["好瓜"]), tree
 createPlot(model)
 ```
 
-![](D:\Works\GitHub\zivenyang.github.io\img\in-post\zzh-machine-learning\ch4\model.png)    
+![](/img/in-post/zzh-machine-learning/ch4/model.png)    
 
 ```python
 predict(D_test=val_set, my_tree=model)
