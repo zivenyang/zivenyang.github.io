@@ -32,7 +32,8 @@ $$
 
 例如自然数集合$$N=\{1,2,3,\dots\}$$，我们可以迭代地做$$+1$$运算来列出集合中的每一个元素，因此自然数集合$$N$$是可数的。
 
-而对于区间$$[0.1]$$ 上的实数集是不可数的，我们可以使用反证法来证明。假设区间[0,1]上的实数集是可数的，那么一个列表将所有的元素枚举出来，例如：     
+而对于区间$$[0.1]$$ 上的实数集是不可数的，我们可以使用反证法来证明。假设区间[0,1]上的实数集是可数的，那么一个列表将所有的元素枚举出来，例如：   
+
 $$
 \begin{align}
 0.1354295\dots\\
@@ -44,6 +45,7 @@ $$
 \vdots
 \end{align}
 $$
+
 我们取以上列表中的对角线元素组成一个新的数$$a=0.121318\dots​$$，然后将$$a​$$中所有的小数位$$+1​$$得到$$a'=0.232429\dots​$$。可以看到$$a​$$与$$a'​$$都在集合$$[0,1]​$$中，然而我们无法通过上述列表中除$$a'​$$以外的元素来还原出$$a'​$$，即使是$$a​$$也不行。因为即使我们将$$a​$$中的前$$n​$$位小数$$+1​$$，$$a'​$$的第$$n+1​$$位以后小数也都与$$a​$$的第$$n+1​$$位以后的小数不同。因此我们永远也无法根据$$a​$$来得到$$a'​$$，所以说区间$$[0,1]​$$上的实数集是不可数的。
 
 需要注意的一点是，**无穷并不代表不可数**，例如自然数集中具有无穷个元素，但它是可数的。
@@ -70,7 +72,8 @@ $$
 
   
 
-**期望**：
+**期望**：   
+
 $$
 \begin{align}
 E(X)=\sum_{k=0}^{\infty}x_kP(X=x_k)
@@ -78,6 +81,7 @@ E(X)=\sum_{k=0}^{\infty}x_kP(X=x_k)
 $$
 
 **方差**：   
+
 $$
 \begin{align}
 D(X) & = \sum_{0}^{\infty}[x_k-E(X)]^2P(X=x_k)\\
@@ -87,6 +91,7 @@ D(X) & = \sum_{0}^{\infty}[x_k-E(X)]^2P(X=x_k)\\
 &=E[X^2]-[E(X)]^2\\
 \end{align}
 $$
+
 ****
 
 
@@ -96,11 +101,13 @@ $$
 如果一个随机变量$$X$$的全部可能取值为不可数的，则称$$X​$$为**连续型随机变量（continuous random variable）**，这类随机变量的值域是一个区间（或几个区间的并）。
 
 设连续型随机变量$$X​$$的分布函数为$$F(x)​$$，如果存在非负函数$$f(x)​$$，使得对任意实数$$x​$$，有：  
+
 $$
 \begin{align}
 F(X)=\int_{-\infty}^{x}f(x)dx
 \end{align}    
 $$
+
 其中$$f(x)$$为$$X$$的**概率密度函数（probability density function）**。    
 
 如果一个函数$$f(x)​$$是$$X​$$的概率密度函数，必须满足下面几个条件：   
@@ -111,14 +118,16 @@ $$
 
 
 
-**期望**：      
+**期望**：     
+
 $$
 \begin{align}
 E(X)=\int_{-\infty}^{+\infty}xf(x)dx
 \end{align}
 $$
 
-**方差**：     
+**方差**：    
+
 $$
 \begin{align}
 D(X) &= \int_{-\infty}^{+\infty}[x-E(X)]^2f(x)dx\\
@@ -128,6 +137,7 @@ D(X) &= \int_{-\infty}^{+\infty}[x-E(X)]^2f(x)dx\\
 &=E[X^2]-[E(X)]^2\\
 \end{align}
 $$
+
 ****
 
 
@@ -141,6 +151,7 @@ $$
 | $$P$$ | $$p$$ | $$1-p$$ |
 
 若随机变量$$X$$的所以有可能取值为0与1，且它的分布律为
+
 $$
 \begin{align}
 P(X=k)=p^k(1-p)^{1-k},\quad k=0, 1\quad(0\lt p\lt 1)
@@ -148,12 +159,14 @@ P(X=k)=p^k(1-p)^{1-k},\quad k=0, 1\quad(0\lt p\lt 1)
 $$
 
 则有期望：  
+
 $$
 E(X)=1\cdot p+0\cdot q=p
 $$
 
 
 方差：   
+
 $$
 \begin{align}
 D(X) & = E[X^2]-[E(X)]^2\\
@@ -173,6 +186,7 @@ $$
 |   $$P$$   |   $$C^{0}_{n}p^0(1-p)^{n}$$   |   $$C^{1}_{n}p^1(1-p)^{n-1}$$   |   $$C^{2}_{n}p^2(1-p)^{n-2}$$   |   $$\cdots$$   |   $$C^{n}_{n}p^n(1-p)^{0}$$   |
 
 若随机变量$$X$$的所有可能取值为$$0, 1, 2, \cdots, n$$ ，且它的分布律为       
+
 $$
 \begin{align}
 P(X=k)=C_{n}^{k}p^{k}(1-p)^{n-k},\quad k=0, 1, 2,\cdots,n\quad (0\lt p\lt 1)
@@ -185,22 +199,27 @@ $$
 
 
 在$$n$$重伯努利试验中，以$$X$$表示事件$$A$$发生的次数，它的可能取值为$$1, 2, 3, \cdots , n$$，且由二项概率公式有：     
+
 $$
 \begin{align}
 P(X=k)=P_n(k)=C_{n}^{k}p^{k}(1-p)^{n-k},\quad k=0, 1, 2,\cdots,n
 \end{align}
 $$
+
 即$$X\sim B(n,p)$$。因此，我们常用二项分布来描述可重复进行独立试验的随机现象。
 
 
 
-**方法一：** 由于$$(X=k)$$相互独立且均服从参数为$$p$$的$$0-1$$分布，故期望为：  
+**方法一：** 由于$$(X=k)$$相互独立且均服从参数为$$p$$的$$0-1$$分布，故期望为：    
+
 $$
 \begin{align}
 E(X)=\sum^{n}_{k=1}E(X=k)=np
 \end{align}
 $$
+
 其方差为：  
+
 $$
 \begin{align}
 D(X)=\sum^{n}_{i=1}D(X=k)=np(1-p)
@@ -211,6 +230,7 @@ $$
 **方法二：**  
 
 预备知识:    
+
 $$
 \begin{align}
 (a+b)^{n}=\sum_{i=0}^{n} C_{n}^{i}a^nb^{n-i}
@@ -248,6 +268,7 @@ $$
 | $$X$$ |             0             |              1              |              4              | $$\cdots$$ |          $$n^2$$          |
 | :---: | :-----------------------: | :-------------------------: | :-------------------------: | :--------: | :-----------------------: |
 |   P   | $$C^{0}_{n}p^0(1-p)^{n}$$ | $$C^{1}_{n}p^1(1-p)^{n-1}$$ | $$C^{2}_{n}p^2(1-p)^{n-2}$$ | $$\cdots$$ | $$C^{n}_{n}p^n(1-p)^{0}$$ |
+
 $$
 \begin{align}
 E(X^2)&=\sum_{k=0}^{n}k^{2}C_{n}^{k}p^k(1-p)^{n-k}\\
@@ -268,6 +289,7 @@ $$
 
 
 故方差：  
+
 $$
 \begin{align}
 D(X)&=E(X^2)-[E(X)]^2\\
@@ -289,6 +311,7 @@ $$
 | $$P$$ | $$C^{r}_{r}p^r(1-p)^{0}$$ | $$C^{r}_{r+1}p^r(1-p)^{1}$$ | $$C^{r}_{r+2}p^r(1-p)^{2}$$ | $$\cdots$$ |
 
 对于一系列独立的成败实验，每次实验成功的概率恒为$$p$$，持续实验直到$$r$$次成功（$$r$$为正整数），则总实验次数$$X$$的概率为：  
+
 $$
 \begin{align}
 P(X=x;r,p)=C_{x}^{r}p^r(1-p)^{x-r},\quad x\in [r, r+1, r+2,\cdots ,\infty)
@@ -296,6 +319,7 @@ P(X=x;r,p)=C_{x}^{r}p^r(1-p)^{x-r},\quad x\in [r, r+1, r+2,\cdots ,\infty)
 $$
 
 由于第$$r$$次实验必定成功，故上式可以写为：  
+
 $$
 \begin{align}
 P(X=x;r,p)=C_{x-1}^{r-1}p^r(1-p)^{x-r},\quad x\in [r, r+1, r+2,\cdots ,\infty)
@@ -303,6 +327,7 @@ P(X=x;r,p)=C_{x-1}^{r-1}p^r(1-p)^{x-r},\quad x\in [r, r+1, r+2,\cdots ,\infty)
 $$
 
 若记$$X=k$$为失败次数，则：  
+
 $$
 P(X=k;r,p)=C_{k+r-1}^{r-1}p^{r}(1-p)^{k},\quad k\in [0, 1, 2, \cdots, \infty)
 $$
@@ -312,6 +337,7 @@ $$
 ### 泊松分布（Poisson distribution）
 
 若随机变量$$X$$的所有可能取值为一切非负整数，且它的分布律为：    
+
 $$
 \begin{align}
 P(X=k)=\frac{\lambda^k}{k!}e^{-\lambda},\quad k=0, 1, 2, \cdots, \infty \quad \lambda\gt0
@@ -323,6 +349,7 @@ $$
 
 
 预备知识—Taylor展示：    
+
 $$
 \begin{align}
 f(x)&=\frac{f(x_0)}{0!}+\frac{f'(x_0)}{1!}(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n +R^n(x)\\
@@ -337,6 +364,7 @@ $$
 
 
 则其期望为：     
+
 $$
 \begin{align}
 E(X)&=\sum_{k=0}^{\infty}k\frac{\lambda^{k}}{k!}e^{-\lambda}\\
@@ -348,6 +376,7 @@ E(X)&=\sum_{k=0}^{\infty}k\frac{\lambda^{k}}{k!}e^{-\lambda}\\
 $$
 
 其方差为：    
+
 $$
 \begin{align}
 D(X)&=E(X^2)-[E(X)]^2\\
@@ -369,11 +398,13 @@ $$
 泊松分布与二项分布的关系：   
 
 若$$X\sim B(n,p)$$，当$$n$$比较大而$$p$$又很小时，二项分布近似泊松分布，即：   
+
 $$
 \begin{align}
 P(X=k)=C_n^kp^k(1-p)^{n-k}\approx \frac{\lambda^k}{k!}e^{-\lambda},\quad k=0, 1, 2, \cdots
 \end{align}
-$$
+$$    
+
 其中，$$\lambda=np$$ 。  
 
 
@@ -385,10 +416,11 @@ C_n^kp_n^k(1-p_n)^{n-k}&=\frac{n(n-1)\cdots(n-k+1)}{k!}(\frac{\lambda_n}{n})^k(\
 &=\frac{n(n-1)\cdots(n-k+1)}{n^k}\frac{\lambda_n^k}{k!}(1-\frac{\lambda_n}{n})^n(1-\frac{\lambda_n}{n})^{-k}\\
 &=[1\cdot(1-\frac{1}{n})\cdots(1-\frac{k-1}{n})]\frac{\lambda_n^k}{k!}(1-\frac{\lambda_n}{n})^n(1-\frac{\lambda_n}{n})^{-k}
 \end{align}
-$$
+$$    
 
 
 其中         
+
 $$
 \begin{align}
 &\lim_{n\to \infty}\lambda_n^k=\lambda_k,  &\lim_{n \to\infty}(1-\frac{\lambda_n}{n})^n=\lim_{n\to \infty}(1-\frac{\lambda_n}{n})^{-\frac{\lambda_n}{n}\cdot(-\lambda_n)}=e^{-\lambda},\\
@@ -397,9 +429,11 @@ $$
 $$
 
 故       
+
 $$
 \lim_{n\to \infty}P(X_n=k)=\lim_{n\to \infty}C_n^kp^k(1-p)^{n-k}= \frac{\lambda^k}{k!}e^{-\lambda},\quad k=0, 1, 2, \cdots
-$$
+$$    
+
 ****
 
 ## 常见的连续型随机变量的分布
@@ -407,6 +441,7 @@ $$
 ### 均匀分布（Uniform Distribution）
 
 若随机变量$$X$$满足的概率密度函数为：  
+
 $$
 \begin{align}
 f(x)=F'(x)=
@@ -415,11 +450,12 @@ f(x)=F'(x)=
 0,&\text{其他.}
 \end{cases}
 \end{align}
-$$
+$$    
 
 则称$$X$$在$$(a,b)$$上服从**均匀分布(uniform distribution)**，记为$$X\sim U(a, b)$$ 。    
 
 **期望：**    
+
 $$
 \begin{align}
 E(X) &= \int_{-\infty}^{+\infty}xf(x)dx\\
@@ -431,6 +467,7 @@ E(X) &= \int_{-\infty}^{+\infty}xf(x)dx\\
 $$
 
 **方差：**   
+
 $$
 \begin{align}
 D(x)&=E(x^2)-[E(x)]^2\\
@@ -441,12 +478,14 @@ D(x)&=E(x^2)-[E(x)]^2\\
 &=\frac{a^2+ab+b^2}{3}-(\frac{a+b}{2})^2\\
 &=\frac{(b-a)^2}{12}
 \end{align}
-$$
+$$     
+
 *****
 
 ### 指数分布（Exponential Distribution）
 
 若随机变量$$X$$的概率密度函数为：   
+
 $$
 \begin{align}
 f(x)=
@@ -461,6 +500,7 @@ $$
 其中常数$$\lambda\gt 0$$，则称$$X$$服从参数为$$\lambda$$的**指数分布（exponential distribution）**。    
 
 **期望：**   
+
 $$
 \begin{align}
 E(X) &= \int_{-\infty}^{+\infty}xf(x)dx\\
@@ -476,6 +516,7 @@ $$
 
 
 **方差：**    
+
 $$
 \begin{align}
 D(x)&=E(x^2)-[E(x)]^2\\
@@ -487,7 +528,8 @@ D(x)&=E(x^2)-[E(x)]^2\\
 &=\frac{1}{\lambda}\cdot \frac{2}{\lambda}-\frac{1}{\lambda ^2}\\
 &=\frac{1}{\lambda ^2}
 \end{align}
-$$
+$$    
+
 *****
 
 
@@ -495,6 +537,7 @@ $$
 ### 正态分布（Normal/Gaussian distribution）
 
 若随机变量$$X$$的概率密度函数为：  
+
 $$
 \begin{align}
 f(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}},\quad -\infty \lt x\lt+\infty
@@ -509,6 +552,7 @@ $$
 **预备知识1：**         
 
 令$$t=\frac{x-\mu}{\sigma}$$，则        
+
 $$
 \begin{align}
 \int_{-\infty}^{+\infty}f(x)dx&=\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}dx\\
@@ -518,7 +562,8 @@ $$
 $$
 
 
-令$$I=\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx$$，则        
+令$$I=\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx$$，则       
+
 $$
 \begin{align}
 I^2&=(\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx)^2\\
@@ -528,6 +573,7 @@ I^2&=(\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx)^2\\
 $$
 
 将坐标$$(x,y)$$转换为极坐标$$(r, \theta)$$：     
+
 $$
 \begin{cases}
 x=r\cdot cos\theta\\
@@ -536,6 +582,7 @@ y=r\cdot sin\theta
 $$
 
 故：     
+
 $$
 \begin{align}
 I^2&=\frac{1}{2\pi}\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}e^{-\frac{x^2+y^2}{2}}dxdy\\
@@ -545,7 +592,7 @@ I^2&=\frac{1}{2\pi}\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}e^{-\frac{x^2
 &=-(0-1)\\
 &=1
 \end{align}
-$$
+$$  
 
 
 因为$$f(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}\geqslant 0$$，故$$I=\int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx=1$$。       
@@ -555,6 +602,7 @@ $$
 **预备知识2：**         
 
 令$$f(x)=\frac{x}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}$$，因为$$f(x)=-f(-x)$$，故$$f(x)$$为奇函数，故：     
+
 $$
 \begin{align}
 \int_{-\infty}^{+\infty}f(x)dx=\int_{-\infty}^{+\infty}\frac{x}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx=0
@@ -563,6 +611,7 @@ $$
 
 
 **期望：**   
+
 $$
 \begin{align}
 E(X) &= \int_{-\infty}^{+\infty}xf(x)dx\\
@@ -578,6 +627,7 @@ $$
 
 
 **方差：**   
+
 $$
 \begin{align}
 D(X)&=E([X-E(X)]^2)\\
@@ -589,7 +639,7 @@ D(X)&=E([X-E(X)]^2)\\
 &=0+\sigma^2 \cdot 1\\
 &=\sigma^2
 \end{align}
-$$
+$$     
 
 ******
 
